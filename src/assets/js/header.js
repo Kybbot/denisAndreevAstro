@@ -14,6 +14,6 @@ export const initHeader = () => {
 
 	headerSelect.addEventListener("change", (event) => {
 		const target = event.target;
-		window.location.pathname = target.value;
+		window.location.href = target.value;
 	});
 };
