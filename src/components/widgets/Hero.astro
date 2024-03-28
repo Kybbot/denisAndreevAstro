@@ -1,0 +1,89 @@
+---
+import Contacts from "../entities/Contacts.astro";
+import SocialIcons from "../entities/SocialIcons.astro";
+
+import Header from "../features/Header.astro";
+---
+
+<div class="hero">
+	<div class="hero__bg">
+		<div class="hero__bg-1"></div>
+		<div class="hero__bg-2"></div>
+	</div>
+	<!-- HEADER -->
+	<Header />
+
+	<!-- HERO CONTENT -->
+	<div class="container">
+		<div class="hero__container">
+			<div class="hero__socials">
+				<SocialIcons />
+			</div>
+			<div class="hero__picture">
+				<picture>
+					<source srcset="/imgs/1.webp 1x, /imgs/1@2x.webp 2x" type="image/webp" />
+					<img
+						class="hero__img"
+						width="460"
+						height="645"
+						src="/imgs/1.png"
+						srcset="/imgs/1@2x.png 2x"
+						alt="Denis Andreev"
+						aria-hidden="true"
+					/>
+				</picture>
+				<div class="hero__gradient"></div>
+			</div>
+			<div class="hero__wrapper">
+				<div class="hero__info">
+					<h2 class="hero__title">
+						<span class="hero__title--span">D</span><span class="hero__title--span">e</span><span
+							class="hero__title--span">n</span
+						><span class="hero__title--span">i</span><span class="hero__title--span">s</span>
+						<span class="hero__title--span">A</span><span class="hero__title--span">n</span><span
+							class="hero__title--span">d</span
+						><span class="hero__title--span">r</span><span class="hero__title--span">e</span><span
+							class="hero__title--span">e</span
+						><span class="hero__title--span">v</span>
+					</h2>
+					<p class="hero__description">
+						Project manager <br />
+						with skills of Analytical and Product skills
+					</p>
+					<div class="hero__line"></div>
+					<div class="hero__icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.5894 15L4.98242 6.393L6.39642 4.979L15.0034 13.586L15.0034 6L17.0034 6L17.0034 17L6.00342 17L6.00342 15L13.5884 15L13.5894 15Z"
+								fill="url(#paint0_linear_105_1974)"
+								stroke="black"
+								stroke-width="0.7"></path>
+							<defs>
+								<linearGradient
+									id="paint0_linear_105_1974"
+									x1="7.49945"
+									y1="9.49999"
+									x2="17.1607"
+									y2="7.16798"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop offset="0" stop-color="white"></stop>
+									<stop offset="1" stop-color="#9F9F9F"></stop>
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+					<p class="hero__about">
+						Welcome to my personal page! Here you will find a detailed summary of my experience and skills in
+						project management. My experience includes successfully completing a variety of projects. I hope
+						that my resume will interest you, and I am ready to discuss cooperation opportunities. Thank you
+						for your attention!"
+					</p>
+				</div>
+				<div class="hero__contacts">
+					<Contacts />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

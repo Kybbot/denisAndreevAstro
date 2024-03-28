@@ -1,0 +1,36 @@
+---
+type Props = {
+	isDark?: boolean;
+};
+
+const { isDark = false } = Astro.props;
+---
+
+<div class=`writeTo ${isDark ? "writeTo--dark" : ""}`>
+	<p class="writeTo__text">If you're interested, you can write to</p>
+	<div class="writeTo__line"></div>
+	<div class="writeTo__socials">
+		<a
+			href="https://t.me/andreevDev"
+			target="_blank"
+			rel="noreferrer noopener"
+			class="write__social"
+			aria-label="Telegram"
+		>
+			<svg width="16" height="16" aria-hidden="true" focusable="false">
+				<use href="/icons.svg#telegram"></use>
+			</svg>
+		</a>
+		<a
+			href="https://api.whatsapp.com/send?phone=380663359915"
+			target="_blank"
+			rel="noreferrer noopener"
+			class="write__social"
+			aria-label="Whatsapp"
+		>
+			<svg width="16" height="16" aria-hidden="true" focusable="false">
+				<use href="/icons.svg#whatsapp"></use>
+			</svg>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+---
+import WriteTo from "../entities/WriteTo.astro";
+---
+
+<section class="languages">
+	<div class="languages__bg">
+		<img
+			loading="lazy"
+			class="languages__dec"
+			src="/imgs/languagesBg.svg"
+			aria-hidden="true"
+			alt=""
+			width="1413"
+			height="564"
+		/>
+	</div>
+	<div class="container">
+		<div class="languages__container">
+			<h2 class="languages__title">
+				<span class="languages__title--span">L</span><span class="languages__title--span">a</span><span
+					class="languages__title--span">n</span
+				><span class="languages__title--span">g</span><span class="languages__title--span">u</span><span
+					class="languages__title--span">a</span
+				><span class="languages__title--span">g</span><span class="languages__title--span">e</span><span
+					class="languages__title--span">s</span
+				>
+			</h2>
+			<div class="languages__blocks">
+				<div class="languages__block">
+					<p class="languages__skill">Upper Intermediate</p>
+					<p class="languages__name">🇬🇧 English</p>
+				</div>
+				<div class="languages__block">
+					<p class="languages__skill">Native</p>
+					<p class="languages__name">🇺🇦 Ukrainian</p>
+				</div>
+				<div class="languages__block">
+					<p class="languages__skill">Native</p>
+					<p class="languages__name">Russian</p>
+				</div>
+			</div>
+			<div class="languages__writeTo">
+				<WriteTo isDark />
+			</div>
+		</div>
+	</div>
+</section>

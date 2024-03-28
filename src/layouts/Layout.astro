@@ -1,0 +1,33 @@
+---
+import "../assets/css/index.css";
+
+import { getLangFromUrl, useTranslations } from "../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>{t("title")}</title>
+		<meta name="description" content={t("description")} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={t("title")} />
+		<meta property="og:description" content={t("description")} />
+		<meta name="twitter:card" content="summary_large_image" />
+
+		<link rel="icon" type="image/png" sizes="16x16" href="/16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/32.png" />
+	</head>
+	<body>
+		<slot />
+	</body>
+	<script src="../assets/js/index.js"></script>
+</html>

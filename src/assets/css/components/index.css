@@ -1,0 +1,26 @@
+@import "./body.css";
+@import "./container.css";
+
+@import "./macro/contact.css";
+@import "./macro/writeTo.css";
+@import "./macro/cvLink.css";
+@import "./macro/socialIcon.css";
+
+@import "./modal.css";
+@import "./mobileMenu.css";
+@import "./projectsModal.css";
+@import "./project.css";
+@import "./switch.css";
+
+@import "./header.css";
+@import "./hero.css";
+@import "./projects.css";
+@import "./experience.css";
+@import "./skills.css";
+@import "./apps.css";
+@import "./education.css";
+@import "./reviews.css";
+@import "./courses.css";
+@import "./languages.css";
+@import "./advantages.css";
+@import "./footer.css";

@@ -1,0 +1,43 @@
+---
+type Props = {
+	isDark?: boolean;
+};
+
+const { isDark = false } = Astro.props;
+---
+
+<Fragment>
+	<a
+		href="https://www.instagram.com/andreev.d_/"
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		aria-label="Instagram"
+		target="_blank"
+		rel="noreferrer noopener"
+	>
+		<svg width="16" height="16" aria-hidden="true" focusable="false">
+			<use href="/icons.svg#instagram"></use>
+		</svg>
+	</a>
+	<a
+		href="https://www.facebook.com/profile.php?id=100017103588367"
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		aria-label="Facebook"
+		target="_blank"
+		rel="noreferrer noopener"
+	>
+		<svg width="16" height="16" aria-hidden="true" focusable="false">
+			<use href="/icons.svg#facebook"></use>
+		</svg>
+	</a>
+	<a
+		href="https://www.linkedin.com/in/denis-andreev-0a9216244/"
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		aria-label="Linkedin"
+		target="_blank"
+		rel="noreferrer noopener"
+	>
+		<svg width="16" height="16" aria-hidden="true" focusable="false">
+			<use href="/icons.svg#linkedin"></use>
+		</svg>
+	</a>
+</Fragment>

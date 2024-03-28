@@ -1,0 +1,46 @@
+---
+import CvLink from "../entities/CvLink.astro";
+
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<header class="header">
+	<div class="container">
+		<div class="header__container">
+			<h1 class="header__title">{t("header.title")}</h1>
+			<div class="header__wrapper">
+				<nav class="header__nav">
+					<ul class="header__ul">
+						<li class="header__li">
+							<a href="#experience" class="header__link">{t("header.experience")}</a>
+						</li>
+						<li class="header__li">
+							<a href="#about" class="header__link">{t("header.about")}</a>
+						</li>
+						<li class="header__li">
+							<a href="#education" class="header__link">{t("header.education")}</a>
+						</li>
+						<li class="header__li">
+							<a href="#reviews" class="header__link">{t("header.reviews")}</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__btns">
+					<select name="language" id="headerSelect" aria-label="Language" class="header__select">
+						<option value="/">EN</option>
+						<option value="/ua">UA</option>
+					</select>
+					<button id="headerMenu" type="button" class="header__menu" aria-label="Navigation">
+						<svg width="16" height="16" aria-hidden="true" focusable="false">
+							<use href="/icons.svg#menu"></use>
+						</svg>
+					</button>
+					<CvLink className="header__cv" />
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

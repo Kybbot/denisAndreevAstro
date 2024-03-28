@@ -1,0 +1,29 @@
+.contact {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 19px;
+	color: #ffffff;
+	text-decoration: none;
+	margin-bottom: 8px;
+	transition: color 0.3s ease;
+}
+
+.contact:hover {
+	color: #86868b;
+}
+
+.contact--dark {
+	color: #000000;
+}
+
+.contact.contact--dark:hover {
+	color: #8c8d8d;
+}
+
+.contact:last-child {
+	margin-bottom: 0;
+}

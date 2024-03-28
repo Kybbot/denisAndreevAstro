@@ -1,0 +1,32 @@
+---
+type Props = {
+	isDark?: boolean;
+};
+
+const { isDark = false } = Astro.props;
+---
+
+<Fragment>
+	<a
+		href="tel:+380663359915"
+		target="_blank"
+		rel="noreferrer noopener"
+		class=`contact ${isDark ? "contact--dark" : ""}`
+	>
+		<svg width="16" height="16" aria-hidden="true" focusable="false">
+			<use href="/icons.svg#phone"></use>
+		</svg>
+		+380 66 335 99 15
+	</a>
+	<a
+		href="mailto:andreev@gmail.com"
+		target="_blank"
+		rel="noreferrer noopener"
+		class=`contact ${isDark ? "contact--dark" : ""}`
+	>
+		<svg width="16" height="16" aria-hidden="true" focusable="false">
+			<use href="/icons.svg#email"></use>
+		</svg>
+		andreev@gmail.com
+	</a>
+</Fragment>
