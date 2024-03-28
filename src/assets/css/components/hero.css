@@ -279,6 +279,7 @@
 	.hero__img {
 		width: 660px;
 		height: 612px;
+		max-height: 612px;
 	}
 }
 
