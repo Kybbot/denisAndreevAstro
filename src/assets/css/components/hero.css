@@ -273,10 +273,11 @@
 @media screen and (min-width: 1440px) {
 	.hero__picture {
 		height: 646px;
-		flex: 0 1 460px;
+		flex: 0 1 660px;
 	}
 
 	.hero__img {
+		width: 660px;
 		max-height: 612px;
 	}
 }
