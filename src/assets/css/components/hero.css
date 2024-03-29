@@ -35,8 +35,24 @@
 	display: none;
 }
 
-.hero__socials a {
+.hero__social {
 	opacity: 0;
+}
+
+.hero__social:nth-child(1) {
+	transition: opacity 0.4s ease-in-out 0.4s, transform 0.3s ease;
+}
+
+.hero__social:nth-child(2) {
+	transition: opacity 0.4s ease-in-out 0.5s, transform 0.3s ease;
+}
+
+.hero__social:nth-child(3) {
+	transition: opacity 0.4s ease-in-out 0.6s, transform 0.3s ease;
+}
+
+.hero__social--active {
+	opacity: 1;
 }
 
 .hero__picture {

@@ -1,15 +1,16 @@
 ---
 type Props = {
 	isDark?: boolean;
+	className?: string;
 };
 
-const { isDark = false } = Astro.props;
+const { isDark = false, className } = Astro.props;
 ---
 
 <Fragment>
 	<a
 		href="https://www.instagram.com/andreev.d_/"
-		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""} ${className ? className : ""}`
 		aria-label="Instagram"
 		target="_blank"
 		rel="noreferrer noopener"
@@ -20,7 +21,7 @@ const { isDark = false } = Astro.props;
 	</a>
 	<a
 		href="https://www.facebook.com/profile.php?id=100017103588367"
-		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""} ${className ? className : ""}`
 		aria-label="Facebook"
 		target="_blank"
 		rel="noreferrer noopener"
@@ -31,7 +32,7 @@ const { isDark = false } = Astro.props;
 	</a>
 	<a
 		href="https://www.linkedin.com/in/denis-andreev-0a9216244/"
-		class=`socialIcon ${isDark ? "socialIcon--dark" : ""}`
+		class=`socialIcon ${isDark ? "socialIcon--dark" : ""} ${className ? className : ""}`
 		aria-label="Linkedin"
 		target="_blank"
 		rel="noreferrer noopener"

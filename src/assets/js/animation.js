@@ -19,13 +19,13 @@ const animateTitle = (title, spans) => {
 	observer.observe(title);
 };
 
-const fadeIn = (element, classActive) => {
+const fadeIn = (element, classActive, checkIntersectionRatio = true) => {
 	const observer = new IntersectionObserver(
 		(entries) => {
 			const entry = entries[0];
 			const target = entry.target;
 
-			if (entries[0].intersectionRatio <= 0) return;
+			if (checkIntersectionRatio && entries[0].intersectionRatio <= 0) return;
 
 			target.classList.add(classActive);
 			observer.unobserve(target);
@@ -38,44 +38,35 @@ const fadeIn = (element, classActive) => {
 export const animations = () => {
 	// HEADER
 	const header = document.querySelector(".header");
-	header.classList.add("header--active");
+	fadeIn(header, "header--active", false);
 
 	// HERO
 	const heroImg = document.querySelector(".hero__img");
-	heroImg.classList.add("hero__img--active");
+	fadeIn(heroImg, "hero__img--active");
 
 	const heroSocials = document.querySelectorAll(".hero__socials .socialIcon");
-	heroSocials.forEach((heroSocial, index) => {
-		const i = index + 4;
-		const delay = i < 10 ? `0.${i}s` : `${i.toString().split("").join(".")}s`;
-
-		heroSocial.style.transition = `opacity 0.4s ease-in-out ${delay}, transform 0.3s ease`;
-		heroSocial.style.opacity = "1";
-	});
-
-	const heroTitleLetters = document.querySelectorAll(".hero__title--span");
-	let heroDelay = 300;
-
-	for (const heroTitleLetter of heroTitleLetters) {
-		heroTitleLetter.style.transition = `opacity 0.1s ease-in-out ${heroDelay}ms`;
-		heroTitleLetter.style.opacity = "1";
-		heroDelay += 60;
+	for (const heroSocial of heroSocials) {
+		fadeIn(heroSocial, "hero__social--active");
 	}
 
+	const heroTitle = document.querySelector(".hero__title");
+	const heroTitleLetters = document.querySelectorAll(".hero__title--span");
+	animateTitle(heroTitle, heroTitleLetters);
+
 	const heroDescription = document.querySelector(".hero__description");
-	heroDescription.classList.add("hero__description--active");
+	fadeIn(heroDescription, "hero__description--active");
 
 	const heroLine = document.querySelector(".hero__line");
-	heroLine.classList.add("hero__icon--active");
+	fadeIn(heroLine, "hero__line--active");
 
 	const heroIcon = document.querySelector(".hero__icon");
-	heroIcon.classList.add("hero__icon--active");
+	fadeIn(heroIcon, "hero__icon--active");
 
 	const heroAbout = document.querySelector(".hero__about");
-	heroAbout.classList.add("hero__about--active");
+	fadeIn(heroAbout, "hero__about--active");
 
 	const heroContacts = document.querySelector(".hero__contacts");
-	heroContacts.classList.add("hero__contacts--active");
+	fadeIn(heroContacts, "hero__contacts--active");
 
 	// PROJECTS
 	const projectsTitle = document.querySelector(".projects__title");
