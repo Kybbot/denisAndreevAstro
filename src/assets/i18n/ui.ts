@@ -228,7 +228,7 @@ export const ui = {
 	ua: {
 		title: "Project Manager - Андрєєв Денис",
 		description:
-			"Welcome to my website, where you can read a little bit more about me and my work. Contact me, if you believe that we can create something powerful and interesting together.",
+			"Ласкаво просимо на мій сайт, де ви можете прочитати трохи більше про мене та мою роботу. Зв'яжіться зі мною, якщо ви вважаєте, що ми можемо створити щось потужне і цікаве разом.",
 		// Header
 		"header.title": "Denis Andreev",
 		"header.experience": "Досвід роботи",
