@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section id="about" class="skills">
 	<h2 class="srOnly">Skills</h2>
 	<div class="container">
@@ -48,7 +55,7 @@
 								<use href="/icons.svg#skill1"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Team Leading</p>
+						<p class="skills__text">{t("skills.text1")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -56,7 +63,7 @@
 								<use href="/icons.svg#skill2"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Work with Documentation</p>
+						<p class="skills__text">{t("skills.text2")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -64,7 +71,7 @@
 								<use href="/icons.svg#skill3"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Teamwork</p>
+						<p class="skills__text">{t("skills.text3")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -72,7 +79,7 @@
 								<use href="/icons.svg#skill4"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Design analysis and management (UX/UI and Branding)</p>
+						<p class="skills__text">{t("skills.text4")}</p>
 					</div>
 				</div>
 				<div class="skills__row2">
@@ -82,7 +89,7 @@
 								<use href="/icons.svg#skill5"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Web Development management</p>
+						<p class="skills__text">{t("skills.text5")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -90,7 +97,7 @@
 								<use href="/icons.svg#skill6"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Product presentation</p>
+						<p class="skills__text">{t("skills.text6")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -98,7 +105,7 @@
 								<use href="/icons.svg#skill7"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Problem solving</p>
+						<p class="skills__text">{t("skills.text7")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -106,7 +113,7 @@
 								<use href="/icons.svg#skill8"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Organization and planning skills</p>
+						<p class="skills__text">{t("skills.text8")}</p>
 					</div>
 					<div class="skills__skill">
 						<div class="skills__icon">
@@ -114,7 +121,7 @@
 								<use href="/icons.svg#skill9"></use>
 							</svg>
 						</div>
-						<p class="skills__text">Analytical skills</p>
+						<p class="skills__text">{t("skills.text9")}</p>
 					</div>
 				</div>
 			</div>

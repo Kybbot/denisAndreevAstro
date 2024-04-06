@@ -1,13 +1,18 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
 type Props = {
 	isDark?: boolean;
 };
 
 const { isDark = false } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class=`writeTo ${isDark ? "writeTo--dark" : ""}`>
-	<p class="writeTo__text">If you're interested, you can write to</p>
+	<p class="writeTo__text">{t("writeTo.text")}</p>
 	<div class="writeTo__line"></div>
 	<div class="writeTo__socials">
 		<a

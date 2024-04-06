@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="apps">
 	<div class="apps__bg">
 		<img
@@ -41,7 +48,7 @@
 					</svg>
 				</div>
 				<div class="apps__section">
-					<h3 class="apps__subtitle">Management</h3>
+					<h3 class="apps__subtitle">{t("apps.subtitle1")}</h3>
 					<div class="apps__items">
 						<div class="apps__item">
 							<p class="apps__name">Attlasian (Jira)</p>
@@ -76,7 +83,7 @@
 					</div>
 				</div>
 				<div class="apps__section">
-					<h3 class="apps__subtitle">Analisys</h3>
+					<h3 class="apps__subtitle">{t("apps.subtitle2")}</h3>
 					<div class="apps__items">
 						<div class="apps__item">
 							<p class="apps__name">Miro</p>
@@ -117,7 +124,7 @@
 					</div>
 				</div>
 				<div class="apps__section">
-					<h3 class="apps__subtitle">Development</h3>
+					<h3 class="apps__subtitle">{t("apps.subtitle3")}</h3>
 					<div class="apps__items">
 						<div class="apps__item">
 							<p class="apps__name">XCode</p>
@@ -140,7 +147,7 @@
 					</div>
 				</div>
 				<div class="apps__section">
-					<h3 class="apps__subtitle">Microsoft office</h3>
+					<h3 class="apps__subtitle">{t("apps.subtitle4")}</h3>
 					<div class="apps__items">
 						<div class="apps__item">
 							<p class="apps__name">MS Word</p>
@@ -169,7 +176,7 @@
 					</div>
 				</div>
 				<div class="apps__section">
-					<h3 class="apps__subtitle">Design</h3>
+					<h3 class="apps__subtitle">{t("apps.subtitle5")}</h3>
 					<div class="apps__items">
 						<div class="apps__item">
 							<p class="apps__name">Figma</p>

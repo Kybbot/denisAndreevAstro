@@ -1,8 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="advantages">
 	<div class="container">
 		<div class="advantages__container">
 			<div class="advantages__block">
-				<h3 class="advantages__title">Personality</h3>
+				<h3 class="advantages__title">{t("advantages.title1")}</h3>
 				<div class="advantages__scroller" data-speed="fast">
 					<div class="advantages__inner">
 						<p class="advantages__item">
@@ -11,7 +18,7 @@
 									<use href="/icons.svg#skill10"></use>
 								</svg>
 							</span>
-							Creativity
+							{t("advantages.item1")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -19,7 +26,7 @@
 									<use href="/icons.svg#skill11"></use>
 								</svg>
 							</span>
-							Sociability
+							{t("advantages.item2")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -27,7 +34,7 @@
 									<use href="/icons.svg#skill1"></use>
 								</svg>
 							</span>
-							Leadership
+							{t("advantages.item3")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -35,7 +42,7 @@
 									<use href="/icons.svg#skill9"></use>
 								</svg>
 							</span>
-							Strategic Thinking
+							{t("advantages.item4")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -43,13 +50,13 @@
 									<use href="/icons.svg#skill12"></use>
 								</svg>
 							</span>
-							Stress Resistance
+							{t("advantages.item5")}
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="advantages__block advantages__block--dark">
-				<h3 class="advantages__title">Hobby</h3>
+				<h3 class="advantages__title">{t("advantages.title2")}</h3>
 				<div class="advantages__scroller" data-speed="faster">
 					<div class="advantages__inner">
 						<p class="advantages__item">
@@ -58,7 +65,7 @@
 									<use href="/icons.svg#skill13"></use>
 								</svg>
 							</span>
-							Sport
+							{t("advantages.item6")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -66,7 +73,7 @@
 									<use href="/icons.svg#skill14"></use>
 								</svg>
 							</span>
-							Teaching
+							{t("advantages.item7")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -74,7 +81,7 @@
 									<use href="/icons.svg#skill15"></use>
 								</svg>
 							</span>
-							Tourism
+							{t("advantages.item8")}
 						</p>
 						<p class="advantages__item">
 							<span class="advantages__icon">
@@ -82,7 +89,7 @@
 									<use href="/icons.svg#skill8"></use>
 								</svg>
 							</span>
-							Event organisation
+							{t("advantages.item9")}
 						</p>
 					</div>
 				</div>

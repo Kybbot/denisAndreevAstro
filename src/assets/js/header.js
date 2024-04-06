@@ -2,7 +2,23 @@ export const initHeader = () => {
 	const headerSelect = document.querySelector("#headerSelect");
 	const headerSelectOptions = document.querySelectorAll("#headerSelect option");
 
+	const languageMobile = document.querySelector("#languageMobile");
+	const languageMobileOptions = document.querySelectorAll("#languageMobile option");
+
 	const pathname = window.location.pathname;
+
+	for (const languageMobileOption of languageMobileOptions) {
+		if (languageMobileOption.value === pathname) {
+			languageMobileOption.selected = true;
+		} else {
+			languageMobileOption.selected = false;
+		}
+	}
+
+	languageMobile.addEventListener("change", (event) => {
+		const target = event.target;
+		window.location.href = target.value;
+	});
 
 	for (const headerSelectOption of headerSelectOptions) {
 		if (headerSelectOption.value === pathname) {

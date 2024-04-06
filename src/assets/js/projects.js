@@ -1,6 +1,16 @@
+import { ui, defaultLang } from "../i18n/ui";
+
 import { projectsData as data } from "./projectsData";
 
 export const initProjects = () => {
+	const getLangFromUrl = (url) => {
+		const [, lang] = url.pathname.split("/");
+		if (lang in ui) return lang;
+		return defaultLang;
+	};
+
+	const lang = getLangFromUrl(window.location);
+
 	const createPicture = (data, element, lazyLoading) => {
 		const arr = [];
 		for (const item of data) {
@@ -26,7 +36,6 @@ export const initProjects = () => {
 			}
 			if (item.tag === "img") {
 				tag.onload = function () {
-					console.log(item);
 					tag.classList.add(item.visibleClass);
 				};
 			}
@@ -45,7 +54,7 @@ export const initProjects = () => {
 		for (const item of data) {
 			const p = document.createElement("p");
 			p.classList.add("projectsModal__text");
-			p.textContent = item;
+			p.textContent = item[lang];
 
 			arr.push(p);
 		}
@@ -107,7 +116,7 @@ export const initProjects = () => {
 			projectsModalYear.textContent = projectData.year;
 			projectsModalCompany.textContent = projectData.company;
 			projectsModalIcon.href.baseVal = projectData.icon;
-			projectsModalDescription.textContent = projectData.description;
+			projectsModalDescription.textContent = projectData.description[lang];
 
 			projectsModal.classList.add("projectsModal--visible");
 			closeProjectsModal.focus();

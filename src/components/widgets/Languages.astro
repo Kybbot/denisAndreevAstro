@@ -1,5 +1,10 @@
 ---
 import WriteTo from "../entities/WriteTo.astro";
+
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="languages">
@@ -27,16 +32,16 @@ import WriteTo from "../entities/WriteTo.astro";
 			</h2>
 			<div class="languages__blocks">
 				<div class="languages__block">
-					<p class="languages__skill">Upper Intermediate</p>
-					<p class="languages__name">🇬🇧 English</p>
+					<p class="languages__skill">{t("languages.skill1")}</p>
+					<p class="languages__name">{t("languages.name1")}</p>
 				</div>
 				<div class="languages__block">
-					<p class="languages__skill">Native</p>
-					<p class="languages__name">🇺🇦 Ukrainian</p>
+					<p class="languages__skill">{t("languages.skill2")}</p>
+					<p class="languages__name">{t("languages.name2")}</p>
 				</div>
 				<div class="languages__block">
-					<p class="languages__skill">Native</p>
-					<p class="languages__name">Russian</p>
+					<p class="languages__skill">{t("languages.skill3")}</p>
+					<p class="languages__name">{t("languages.name3")}</p>
 				</div>
 			</div>
 			<div class="languages__writeTo">

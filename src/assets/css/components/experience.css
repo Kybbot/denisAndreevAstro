@@ -253,5 +253,6 @@
 
 	.experience__picture {
 		width: 70px;
+		flex: 0 0 70px;
 	}
 }

@@ -105,13 +105,45 @@ export const projectsData = {
 		],
 		title: "Domova",
 		link: "https://domova.com/en/",
-		services: ["Brand design", "UX/ UI design", "Vue.js", "Laravel", "WordPress"],
-		statistic: ["Team of 12 specialists", "11 months full solution development"],
+		services: [
+			{
+				en: "Brand design",
+				ua: "Дизайн бренду",
+			},
+			{
+				en: "UX/ UI design",
+				ua: "UX/UI дизайн",
+			},
+			{
+				en: "Vue.js",
+				ua: "Vue.js",
+			},
+			{
+				en: "Laravel",
+				ua: "Laravel",
+			},
+			{
+				en: "WordPress",
+				ua: "WordPress",
+			},
+		],
+		statistic: [
+			{
+				en: "Team of 12 specialists",
+				ua: "Команда з 12 фахівців",
+			},
+			{
+				en: "11 months full solution development",
+				ua: "11 місяців повної розробки рішення",
+			},
+		],
 		year: "2023",
 		company: "Solar Digital",
 		icon: "/icons.svg#domova",
-		description:
-			"Domova is the only platform in the world that brings together owners of apartments and non-residential premises of a dilapidated or emergency building to jointly sell the entire building to investors or construction companies.",
+		description: {
+			en: "Domova is the only platform in the world that brings together owners of apartments and non-residential premises of a dilapidated or emergency building to jointly sell the entire building to investors or construction companies.",
+			ua: "Domova - єдина в світі платформа, яка об'єднує власників квартир та нежитлових приміщень ветхого або аварійного будинку для спільного продажу всього будинку інвесторам або будівельним компаніям.",
+		},
 	},
 	Sustayn: {
 		firstImages: [
@@ -219,13 +251,37 @@ export const projectsData = {
 		],
 		title: "Sustayn",
 		link: "https://sustayn.eu/",
-		services: ["Brand design", "UX/ UI design", "WordPress"],
-		statistic: ["Team of 7 specialists", "4 months full solution development"],
+		services: [
+			{
+				en: "Brand design",
+				ua: "Дизайн бренду",
+			},
+			{
+				en: "UX/ UI design",
+				ua: "UX/UI дизайн",
+			},
+			{
+				en: "WordPress",
+				ua: "WordPress",
+			},
+		],
+		statistic: [
+			{
+				en: "Team of 7 specialists",
+				ua: "Команда з 7 фахівців",
+			},
+			{
+				en: "4 months full solution development",
+				ua: "4 місяця повної розробки рішення",
+			},
+		],
 		year: "2022",
 		company: "Solar Digital",
 		icon: "/icons.svg#sustayn",
-		description:
-			"The client specializes in the agricultural production of ecological products. The results of his work are to combat global warming, improve the quality of the soil he uses, develop the bioeconomy and build sustainable biomass supply chains.",
+		description: {
+			en: "The client specializes in the agricultural production of ecological products. The results of his work are to combat global warming, improve the quality of the soil he uses, develop the bioeconomy and build sustainable biomass supply chains.",
+			ua: "Клієнт спеціалізується на сільськогосподарському виробництві екологічних продуктів. Результати його роботи спрямовані на боротьбу з глобальним потеплінням, покращення якості ґрунту, який він використовує, розвиток біоекономіки та побудову сталих ланцюгів постачання біомаси.",
+		},
 	},
 	Derjy: {
 		firstImages: [
@@ -333,17 +389,41 @@ export const projectsData = {
 		],
 		title: "Держу в курсе",
 		link: "#",
-		services: ["UX/UI Design", "WP Development", "Laravel + VueJs development"],
+		services: [
+			{
+				en: "UX/ UI design",
+				ua: "UX/UI дизайн",
+			},
+			{
+				en: "WP Development",
+				ua: "Розробка на WP",
+			},
+			{
+				en: "Laravel + VueJs development",
+				ua: "Розробка на Laravel + VueJs",
+			},
+		],
 		statistic: [
-			"Team of 10 specialists",
-			"6 month full solution development",
-			"More than 1000 clients in first day of work",
+			{
+				en: "Team of 10 specialists",
+				ua: "Команда з 10 фахівців",
+			},
+			{
+				en: "6 months full solution development",
+				ua: "6 місяців повної розробки рішення",
+			},
+			{
+				en: "More than 1000 clients in first day of work",
+				ua: "Понад 1000 клієнтів у перший день роботи",
+			},
 		],
 		year: "2021",
 		company: "Держу в курсе",
 		icon: "/icons.svg#derjy",
-		description:
-			"Держу в курсе - is the modern Web educational platform for preparing and teaching class students for the school exam. The conception of the project is to make cheap group classes which can be more than 1000 people in 1 group. So we had a difficult task, how to combine quality with quantity.",
+		description: {
+			en: "Держу в курсе - is the modern Web educational platform for preparing and teaching class students for the school exam. The conception of the project is to make cheap group classes which can be more than 1000 people in 1 group. So we had a difficult task, how to combine quality with quantity.",
+			ua: "Держу в курсе - це сучасна освітня веб-платформа для підготовки та навчання школярів до шкільних іспитів. Концепція проекту полягає в тому, щоб зробити дешеві групові заняття, в яких може бути більше 1000 осіб в 1 групі. Тому перед нами стояло складне завдання, як поєднати якість з кількістю.",
+		},
 	},
 	Kachka: {
 		firstImages: [
@@ -452,18 +532,47 @@ export const projectsData = {
 		title: "KACHKA",
 		link: "#",
 		services: [
-			"Brand design",
-			"3D design",
-			"Motion design",
-			"UX/ UI design",
-			"Vue.js  development",
-			"Smart contract development",
+			{
+				en: "Brand design",
+				ua: "Дизайн бренду",
+			},
+			{
+				en: "3D design",
+				ua: "3D дизайн",
+			},
+			{
+				en: "Motion design",
+				ua: "Моушн-дизайн",
+			},
+			{
+				en: "UX/ UI design",
+				ua: "UX/UI дизайн",
+			},
+			{
+				en: "Vue.js  development",
+				ua: "Розробка на Vue.js",
+			},
+			{
+				en: "Smart contract development",
+				ua: "Розробка смарт-контрактів",
+			},
 		],
-		statistic: ["Team of 10 specialists", "5 months of full product development"],
+		statistic: [
+			{
+				en: "Team of 10 specialists",
+				ua: "Команда з 10 фахівців",
+			},
+			{
+				en: "5 months full solution development",
+				ua: "5 місяців повної розробки рішення",
+			},
+		],
 		year: "2022",
 		company: "KachKa",
 		icon: "/icons.svg#kachka",
-		description:
-			"The Kach.NFT team of like-minded people has developed a patriotic collection of 'biological weapons' that protects Ukrainian borders. «Battle ducks» is an irony over Russian propaganda, Ukrainian biological weapons for eliminating the enemies of Ukraine.",
+		description: {
+			en: "The Kach.NFT team of like-minded people has developed a patriotic collection of 'biological weapons' that protects Ukrainian borders. «Battle ducks» is an irony over Russian propaganda, Ukrainian biological weapons for eliminating the enemies of Ukraine.",
+			ua: 'Команда однодумців Kach.NFT розробила патріотичну колекцію "біологічної зброї", яка захищає українські кордони. "Бойові качки" - це іронія над російською пропагандою, українська біологічна зброя для знищення ворогів України.',
+		},
 	},
 };

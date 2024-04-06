@@ -3,6 +3,11 @@ import Contacts from "../entities/Contacts.astro";
 import SocialIcons from "../entities/SocialIcons.astro";
 
 import Header from "../features/Header.astro";
+
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="hero">
@@ -37,19 +42,20 @@ import Header from "../features/Header.astro";
 			<div class="hero__wrapper">
 				<div class="hero__info">
 					<h2 class="hero__title">
-						<span class="hero__title--span">D</span><span class="hero__title--span">e</span><span
-							class="hero__title--span">n</span
-						><span class="hero__title--span">i</span><span class="hero__title--span">s</span>
-						<span class="hero__title--span">A</span><span class="hero__title--span">n</span><span
-							class="hero__title--span">d</span
-						><span class="hero__title--span">r</span><span class="hero__title--span">e</span><span
-							class="hero__title--span">e</span
-						><span class="hero__title--span">v</span>
+						<span class="hero__title--span">{t("hero.title1")}</span><span class="hero__title--span"
+							>{t("hero.title2")}</span
+						><span class="hero__title--span">{t("hero.title3")}</span><span class="hero__title--span"
+							>{t("hero.title4")}</span
+						><span class="hero__title--span">{t("hero.title5")}</span>
+						<span class="hero__title--span">{t("hero.title6")}</span><span class="hero__title--span"
+							>{t("hero.title7")}</span
+						><span class="hero__title--span">{t("hero.title8")}</span><span class="hero__title--span"
+							>{t("hero.title9")}</span
+						><span class="hero__title--span">{t("hero.title10")}</span><span class="hero__title--span"
+							>{t("hero.title11")}</span
+						><span class="hero__title--span">{t("hero.title12")}</span>
 					</h2>
-					<p class="hero__description">
-						Project manager <br />
-						with skills of Analytical and Product skills
-					</p>
+					<p class="hero__description">{t("hero.description1")} <br /> {t("hero.description2")}</p>
 					<div class="hero__line"></div>
 					<div class="hero__icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,12 +79,7 @@ import Header from "../features/Header.astro";
 							</defs>
 						</svg>
 					</div>
-					<p class="hero__about">
-						Welcome to my personal page! Here you will find a detailed summary of my experience and skills in
-						project management. My experience includes successfully completing a variety of projects. I hope
-						that my resume will interest you, and I am ready to discuss cooperation opportunities. Thank you
-						for your attention!"
-					</p>
+					<p class="hero__about">{t("hero.about")}</p>
 				</div>
 				<div class="hero__contacts">
 					<Contacts />

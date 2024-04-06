@@ -3,6 +3,11 @@ import CvLink from "../entities/CvLink.astro";
 import WriteTo from "../entities/WriteTo.astro";
 import Contacts from "../entities/Contacts.astro";
 import SocialIcons from "../entities/SocialIcons.astro";
+
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <footer class="footer">
@@ -15,22 +20,22 @@ import SocialIcons from "../entities/SocialIcons.astro";
 				</div>
 				<div class="footer__two">
 					<div class="footer__links">
-						<a href="#experience" class="footer__link">Work Experience</a>
-						<a href="#about" class="footer__link">About me</a>
-						<a href="#education" class="footer__link">Education</a>
-						<a href="#contact" class="footer__link">Contact</a>
+						<a href="#experience" class="footer__link">{t("footer.experience")}</a>
+						<a href="#about" class="footer__link">{t("footer.about")}</a>
+						<a href="#education" class="footer__link">{t("footer.education")}</a>
+						<a href="#reviews" class="footer__link">{t("footer.reviews")}</a>
 					</div>
 					<div class="footer__languages">
-						<button type="button" data-current="true" class="footer__language">EN</button>
-						<!-- <button type="button" class="footer__language">UA</button> -->
+						<button id="footerEn" type="button" class="footer__language">EN</button>
+						<button id="footerUa" type="button" class="footer__language">UA</button>
 					</div>
 					<div class="footer__contacts">
-						<p class="footer__titel">Contatcs</p>
+						<p class="footer__titel">{t("footer.contacts")}</p>
 						<Contacts />
 					</div>
 				</div>
 			</div>
-			<p class="footer__titel footer__titel--social">Social media</p>
+			<p class="footer__titel footer__titel--social">{t("footer.social")}</p>
 			<div class="footer__socials footer__socials--min">
 				<SocialIcons />
 			</div>
@@ -43,7 +48,7 @@ import SocialIcons from "../entities/SocialIcons.astro";
 					<svg width="16" height="16" aria-hidden="true" focusable="false">
 						<use href="/icons.svg#arrowTop"></use>
 					</svg>
-					Back to Top
+					{t("footer.btn")}
 				</button>
 				<div class="footer__socials">
 					<SocialIcons />

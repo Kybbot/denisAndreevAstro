@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section id="education" class="education">
 	<div class="container">
 		<div class="education__container">
@@ -14,8 +21,9 @@
 				<article class="education__card">
 					<div class="education__row1">
 						<h3 class="education__name">
-							Oles Honchar Dnipro <br />
-							National University
+							{t("education.name1.1")}
+							<br />
+							{t("education.name1.2")}
 						</h3>
 						<p class="education__time">2023</p>
 					</div>
@@ -23,16 +31,18 @@
 						<div class="education__data">
 							<div class="education__subrow">
 								<p class="education__specialty">
-									Specialty: <br />
-									Applied Mathematics
+									{t("education.specialty1.1")}
+									<br />
+									{t("education.specialty1.2")}
 								</p>
 								<p class="education__rank">
-									Rank: <br />
-									Postgraduate
+									{t("education.rank1.1")}
+									<br />
+									{t("education.rank1.2")}
 								</p>
 							</div>
 							<ul class="education__ul">
-								<li class="education__li">workshops organisations</li>
+								<li class="education__li">{t("education.ul1.li1")}</li>
 							</ul>
 						</div>
 						<picture aria-hidden="true">
@@ -52,8 +62,9 @@
 				<article class="education__card">
 					<div class="education__row1">
 						<h3 class="education__name">
-							Oles Honchar Dnipro <br />
-							National University
+							{t("education.name2.1")}
+							<br />
+							{t("education.name2.2")}
 						</h3>
 						<p class="education__time">2017 — 2020</p>
 					</div>
@@ -61,19 +72,21 @@
 						<div class="education__data">
 							<div class="education__subrow">
 								<p class="education__specialty">
-									Specialty: <br />
-									Applied Mathematics
+									{t("education.specialty2.1")}
+									<br />
+									{t("education.specialty2.2")}
 								</p>
 								<p class="education__rank">
-									Rank: <br />
-									Master
+									{t("education.rank2.1")}
+									<br />
+									{t("education.rank2.2")}
 								</p>
 							</div>
 							<ul class="education__ul">
-								<li class="education__li">organizer of student evenings and events</li>
-								<li class="education__li">captain of the university volleyball team</li>
-								<li class="education__li">host of many university evenings</li>
-								<li class="education__li">workshops organisations</li>
+								<li class="education__li">{t("education.ul2.li1")}</li>
+								<li class="education__li">{t("education.ul2.li2")}</li>
+								<li class="education__li">{t("education.ul2.li3")}</li>
+								<li class="education__li">{t("education.ul2.li4")}</li>
 							</ul>
 						</div>
 						<picture aria-hidden="true">

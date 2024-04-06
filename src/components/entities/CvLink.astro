@@ -1,14 +1,19 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
 type Props = {
 	className?: string;
 	isDark?: boolean;
 };
 
 const { className = "", isDark = false } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <a href="/CV_Denis_Andreev.pdf" target="_blank" class=`cvLink  ${isDark ? "cvLink--dark" : ""} ${className}`>
-	Open CV
+	{t("cvLink.text")}
 	<svg width="16" height="16" aria-hidden="true" focusable="false">
 		<use href="/icons.svg#eye"></use>
 	</svg>

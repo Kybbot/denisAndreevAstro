@@ -6,6 +6,7 @@ import { initExperience } from "./experience";
 import { initSLiders } from "./sliders";
 import { initCourses } from "./courses";
 import { initAdvantages } from "./advantages";
+import { initFooter } from "./footer";
 import { initScrollTop } from "./scrollTop";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,5 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	initSLiders();
 	initCourses();
 	initAdvantages();
+	initFooter();
 	initScrollTop();
 });

@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <div id="projectsModal" class="modal projectsModal">
 	<div class="modal__content modal__content--top modal__content--full">
 		<div class="projectsModal__container">
@@ -18,7 +25,7 @@
 						rel="noreferrer noopener"
 						class="projectsModal__link projectsModal__link--desktop"
 					>
-						Go to Web Site
+						{t("projectsModal.link")}
 						<svg width="16" height="17" aria-hidden="true" focusable="false">
 							<use href="/icons.svg#arrowTopRight"></use>
 						</svg>
@@ -26,21 +33,21 @@
 				</div>
 				<div class="projectsModal__info">
 					<div class="projectsModal__about">
-						<p class="projectsModal__subTitle">Services provided</p>
+						<p class="projectsModal__subTitle">{t("projectsModal.subTitle1")}</p>
 						<div id="projectsModalServices" class="projectsModal__list"></div>
 					</div>
 					<div class="projectsModal__about">
-						<p class="projectsModal__subTitle">Statistic</p>
+						<p class="projectsModal__subTitle">{t("projectsModal.subTitle2")}</p>
 						<div id="projectsModalStatistic" class="projectsModal__list"></div>
 					</div>
 					<div class="projectsModal__about">
-						<p class="projectsModal__subTitle">Year</p>
+						<p class="projectsModal__subTitle">{t("projectsModal.subTitle3")}</p>
 						<div class="projectsModal__list">
 							<p id="projectsModalYear" class="projectsModal__text"></p>
 						</div>
 					</div>
 					<div class="projectsModal__about">
-						<p class="projectsModal__subTitle">Company</p>
+						<p class="projectsModal__subTitle">{t("projectsModal.subTitle4")}</p>
 						<div class="projectsModal__list">
 							<p id="projectsModalCompany" class="projectsModal__text"></p>
 						</div>
@@ -52,7 +59,7 @@
 					rel="noreferrer noopener"
 					class="projectsModal__link projectsModal__link--mobile"
 				>
-					Go to Web Site
+					{t("projectsModal.link")}
 					<svg width="16" height="17" aria-hidden="true" focusable="false">
 						<use href="/icons.svg#arrowTopRight"></use>
 					</svg>
