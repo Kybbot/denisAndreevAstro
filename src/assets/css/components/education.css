@@ -4,6 +4,7 @@
 }
 
 .education__title {
+	display: flex;
 	height: fit-content;
 	font-family: "Montserrat", sans-serif;
 	color: #ffffff;

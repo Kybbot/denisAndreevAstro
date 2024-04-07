@@ -8,6 +8,7 @@
 }
 
 .reviews__title {
+	display: flex;
 	font-family: "Montserrat", sans-serif;
 	font-size: 44px;
 	font-weight: 800;

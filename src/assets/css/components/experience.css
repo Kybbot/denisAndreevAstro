@@ -11,6 +11,7 @@
 }
 
 .experience__title {
+	display: grid;
 	height: fit-content;
 	font-family: "Montserrat", sans-serif;
 	font-size: 44px;

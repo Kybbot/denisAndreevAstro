@@ -21,15 +21,28 @@ const t = useTranslations(lang);
 	</div>
 	<div class="container">
 		<div class="languages__container">
-			<h2 class="languages__title">
-				<span class="languages__title--span">L</span><span class="languages__title--span">a</span><span
-					class="languages__title--span">n</span
-				><span class="languages__title--span">g</span><span class="languages__title--span">u</span><span
-					class="languages__title--span">a</span
-				><span class="languages__title--span">g</span><span class="languages__title--span">e</span><span
-					class="languages__title--span">s</span
-				>
-			</h2>
+			{
+				lang === "en" ? (
+					<h2 class="languages__title">
+						<span class="languages__title--span">L</span>
+						<span class="languages__title--span">a</span>
+						<span class="languages__title--span">n</span>
+						<span class="languages__title--span">g</span>
+						<span class="languages__title--span">u</span>
+						<span class="languages__title--span">a</span>
+						<span class="languages__title--span">g</span>
+						<span class="languages__title--span">e</span>
+						<span class="languages__title--span">s</span>
+					</h2>
+				) : (
+					<h2 class="languages__title">
+						<span class="languages__title--span">М</span>
+						<span class="languages__title--span">о</span>
+						<span class="languages__title--span">в</span>
+						<span class="languages__title--span">и</span>
+					</h2>
+				)
+			}
 			<div class="languages__blocks">
 				<div class="languages__block">
 					<p class="languages__skill">{t("languages.skill1")}</p>

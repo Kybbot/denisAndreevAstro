@@ -19,23 +19,65 @@ const t = useTranslations(lang);
 	</div>
 	<div class="container">
 		<div class="apps__container">
-			<h2 class="apps__title">
-				<span class="apps__title--span">A</span><span class="apps__title--span">p</span><span
-					class="apps__title--span">p</span
-				><span class="apps__title--span">l</span><span class="apps__title--span">i</span><span
-					class="apps__title--span">c</span
-				><span class="apps__title--span">a</span><span class="apps__title--span">t</span><span
-					class="apps__title--span">i</span
-				><span class="apps__title--span">o</span><span class="apps__title--span">n</span><span
-					class="apps__title--span">s</span
-				><br /><span class="apps__title--dec"></span><span class="apps__title--span">e</span><span
-					class="apps__title--span">x</span
-				><span class="apps__title--span">p</span><span class="apps__title--span">e</span><span
-					class="apps__title--span">r</span
-				><span class="apps__title--span">i</span><span class="apps__title--span">e</span><span
-					class="apps__title--span">n</span
-				><span class="apps__title--span">c</span><span class="apps__title--span">e</span>
-			</h2>
+			{
+				lang === "en" ? (
+					<h2 class="apps__title">
+						<span style="display: inline-flex;">
+							<span class="apps__title--span">A</span>
+							<span class="apps__title--span">p</span>
+							<span class="apps__title--span">p</span>
+							<span class="apps__title--span">l</span>
+							<span class="apps__title--span">i</span>
+							<span class="apps__title--span">c</span>
+							<span class="apps__title--span">a</span>
+							<span class="apps__title--span">t</span>
+							<span class="apps__title--span">i</span>
+							<span class="apps__title--span">o</span>
+							<span class="apps__title--span">n</span>
+							<span class="apps__title--span">s</span>
+						</span>
+						<span style="display: inline-flex;">
+							<span class="apps__title--dec" />
+							<span class="apps__title--span">e</span>
+							<span class="apps__title--span">x</span>
+							<span class="apps__title--span">p</span>
+							<span class="apps__title--span">e</span>
+							<span class="apps__title--span">r</span>
+							<span class="apps__title--span">i</span>
+							<span class="apps__title--span">e</span>
+							<span class="apps__title--span">n</span>
+							<span class="apps__title--span">c</span>
+							<span class="apps__title--span">e</span>
+						</span>
+					</h2>
+				) : (
+					<h2 class="apps__title">
+						<span style="display: inline-flex;">
+							<span class="apps__title--span">Д</span>
+							<span class="apps__title--span">о</span>
+							<span class="apps__title--span">с</span>
+							<span class="apps__title--span">в</span>
+							<span class="apps__title--span">і</span>
+							<span class="apps__title--span">д</span>
+						</span>
+						<span style="display: inline-flex;">
+							<span class="apps__title--decUa" />
+							<span class="apps__title--span">з</span>
+							<span class="apps__title--span">а</span>
+							<span class="apps__title--span">с</span>
+							<span class="apps__title--span">т</span>
+							<span class="apps__title--span">о</span>
+							<span class="apps__title--span">с</span>
+							<span class="apps__title--span">у</span>
+							<span class="apps__title--span">в</span>
+							<span class="apps__title--span">а</span>
+							<span class="apps__title--span">н</span>
+							<span class="apps__title--span">н</span>
+							<span class="apps__title--span">я</span>
+						</span>
+					</h2>
+				)
+			}
 			<div class="apps__wrapper">
 				<div class="apps__decMobile">
 					<svg width="177" height="40" aria-hidden="true" focusable="false">

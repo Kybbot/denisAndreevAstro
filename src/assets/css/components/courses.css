@@ -4,6 +4,7 @@
 }
 
 .courses__title {
+	display: flex;
 	font-family: "Montserrat", sans-serif;
 	color: #ffffff;
 	font-size: 44px;

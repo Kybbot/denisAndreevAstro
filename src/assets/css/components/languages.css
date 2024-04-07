@@ -11,6 +11,7 @@
 }
 
 .languages__title {
+	display: flex;
 	height: fit-content;
 	font-family: "Montserrat", sans-serif;
 	font-size: 44px;

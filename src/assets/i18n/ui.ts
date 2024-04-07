@@ -199,6 +199,9 @@ export const ui = {
 		"reviews.position13": "HR",
 		"reviews.description13":
 			"I've been working with Denis in the Solar Digital team for the past two years. He sets a great example as a professional, not only demonstrating high efficiency and professionalism but also the ability to build warm and productive relationships with colleagues. In his role as Project Manager, Denis demonstrates remarkable initiative and responsibility. He is always ready to take on any challenges and tackle them with great energy and understanding. His ability to effectively manage projects and ensure tasks are completed on time with high quality deserves special praise. I particularly want to highlight his exceptional communication skills and openness. Denis is always willing to help and provide constructive feedback. He is a reliable partner for collaboration and a great support for all members of our team. Considering his high level of professionalism and dedication to his work, I look forward to further cooperation on future tasks!",
+		// Courses
+		"courses.school": "School",
+		"courses.month": "Months",
 		// Languages
 		"languages.skill1": "Upper Intermediate",
 		"languages.name1": "🇬🇧 English",
@@ -423,6 +426,9 @@ export const ui = {
 		"reviews.position13": "HR",
 		"reviews.description13":
 			"Я працюю з Денисом у команді Solar Digital протягом останніх двох років. Він є чудовим прикладом професіонала, демонструючи не лише високу ефективність та професіоналізм, але й вміння будувати теплі та продуктивні стосунки з колегами. У ролі керівника проекту Денис демонструє неабияку ініціативність та відповідальність. Він завжди готовий взяти на себе будь-які виклики і вирішувати їх з великою енергією та розумінням. Його здатність ефективно управляти проектами та забезпечувати виконання завдань вчасно і якісно заслуговує на особливу похвалу. Особливо хочеться відзначити його виняткові комунікативні навички та відкритість. Денис завжди готовий допомогти та надати конструктивний зворотній зв'язок. Він є надійним партнером для співпраці та великою підтримкою для всіх членів нашої команди. Враховуючи його високий рівень професіоналізму та відданість своїй справі, я з нетерпінням чекаю на подальшу співпрацю над майбутніми завданнями!",
+		// Courses
+		"courses.school": "Школа",
+		"courses.month": "Місяці",
 		// Languages
 		"languages.skill1": "Вищий середній",
 		"languages.name1": "🇬🇧 Англійська",

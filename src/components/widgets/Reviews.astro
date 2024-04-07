@@ -12,13 +12,29 @@ const t = useTranslations(lang);
 		<div class="reviews__container">
 			<div class="reviews__header">
 				<div>
-					<h2 class="reviews__title">
-						<span class="reviews__title--span">R</span><span class="reviews__title--span">e</span><span
-							class="reviews__title--span">v</span
-						><span class="reviews__title--span">i</span><span class="reviews__title--span">e</span><span
-							class="reviews__title--span">w</span
-						><span class="reviews__title--span">s</span>
-					</h2>
+					{
+						lang === "en" ? (
+							<h2 class="reviews__title">
+								<span class="reviews__title--span">R</span>
+								<span class="reviews__title--span">e</span>
+								<span class="reviews__title--span">v</span>
+								<span class="reviews__title--span">i</span>
+								<span class="reviews__title--span">e</span>
+								<span class="reviews__title--span">w</span>
+								<span class="reviews__title--span">s</span>
+							</h2>
+						) : (
+							<h2 class="reviews__title">
+								<span class="reviews__title--span">В</span>
+								<span class="reviews__title--span">і</span>
+								<span class="reviews__title--span">д</span>
+								<span class="reviews__title--span">г</span>
+								<span class="reviews__title--span">у</span>
+								<span class="reviews__title--span">к</span>
+								<span class="reviews__title--span">и</span>
+							</h2>
+						)
+					}
 					<p class="reviews__switchText">
 						<label for="slidersCheckbox" class="switch">
 							<span class="reviews__switchText1 reviews__switchText--active">{t("reviews.label1")}</span>

@@ -11,6 +11,7 @@
 }
 
 .apps__title {
+	display: grid;
 	position: relative;
 	z-index: 1;
 	font-family: "Montserrat", sans-serif;
@@ -30,6 +31,12 @@
 	display: inline-block;
 	height: 1px;
 	width: 65px;
+}
+
+.apps__title--decUa {
+	display: inline-block;
+	height: 1px;
+	width: 25px;
 }
 
 .apps__wrapper {
@@ -130,6 +137,10 @@
 
 	.apps__title--dec {
 		width: 165px;
+	}
+
+	.apps__title--decUa {
+		width: 135px;
 	}
 
 	.apps__wrapper {

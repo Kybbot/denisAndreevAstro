@@ -1,7 +1,7 @@
 .writeTo {
 	display: flex;
 	align-items: center;
-	gap: 16px;
+	gap: 10px;
 
 	max-width: 343px;
 	padding: 20px 24px;
@@ -65,6 +65,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+	.writeTo {
+		gap: 16px;
+	}
+
 	.writeTo.writeTo--dark {
 		max-width: 289px;
 	}

@@ -1,14 +1,35 @@
+---
+import { getLangFromUrl, useTranslations } from "../../assets/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="courses">
 	<div class="container">
 		<div class="courses__container">
 			<div class="courses__col1">
-				<h2 class="courses__title">
-					<span class="courses__title--span">C</span><span class="courses__title--span">o</span><span
-						class="courses__title--span">u</span
-					><span class="courses__title--span">r</span><span class="courses__title--span">s</span><span
-						class="courses__title--span">e</span
-					><span class="courses__title--span">s</span>
-				</h2>
+				{
+					lang === "en" ? (
+						<h2 class="courses__title">
+							<span class="courses__title--span">C</span>
+							<span class="courses__title--span">o</span>
+							<span class="courses__title--span">u</span>
+							<span class="courses__title--span">r</span>
+							<span class="courses__title--span">s</span>
+							<span class="courses__title--span">e</span>
+							<span class="courses__title--span">s</span>
+						</h2>
+					) : (
+						<h2 class="courses__title">
+							<span class="courses__title--span">К</span>
+							<span class="courses__title--span">у</span>
+							<span class="courses__title--span">р</span>
+							<span class="courses__title--span">с</span>
+							<span class="courses__title--span">и</span>
+						</h2>
+					)
+				}
 				<div class="courses__preview">
 					<img
 						class="courses__img courses__img--active"
@@ -45,7 +66,7 @@
 							<span>C# Basics</span>
 						</p>
 						<p class="courses__time">
-							<span>4 Mounth</span>
+							<span>4 {t("courses.month")}</span>
 							<span>2017</span>
 						</p>
 					</div>
@@ -55,43 +76,43 @@
 							<span>Unity Game Development</span>
 						</p>
 						<p class="courses__time">
-							<span>4 Mounth</span>
+							<span>4 {t("courses.month")}</span>
 							<span>2018</span>
 						</p>
 					</div>
 					<div class="courses__item">
 						<p class="courses__name">
-							<span>School Hillel</span>
+							<span>{t("courses.school")} Hillel</span>
 							<span>Project manager</span>
 						</p>
 						<p class="courses__time">
-							<span>4 Mounth</span>
+							<span>4 {t("courses.month")}</span>
 							<span>2020</span>
 						</p>
 					</div>
 					<div class="courses__item">
 						<p class="courses__name">
-							<span>School IAMPM</span>
+							<span>{t("courses.school")} IAMPM</span>
 							<span>Business analysis</span>
 						</p>
 						<p class="courses__time">
-							<span>4 Mounth</span>
+							<span>4 {t("courses.month")}</span>
 							<span>2022</span>
 						</p>
 					</div>
 					<div class="courses__item">
 						<p class="courses__name">
-							<span>School IAMPM</span>
+							<span>{t("courses.school")} IAMPM</span>
 							<span>TechMind</span>
 						</p>
 						<p class="courses__time">
-							<span>4 Mounth</span>
+							<span>4 {t("courses.month")}</span>
 							<span>2023</span>
 						</p>
 					</div>
 					<div class="courses__item">
 						<p class="courses__name">
-							<span>School IAMPM</span>
+							<span>{t("courses.school")} IAMPM</span>
 							<span>Product management</span>
 						</p>
 						<p class="courses__time">
